@@ -1,0 +1,60 @@
+body {
+    background-color: grey;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.container {
+    border: 5px solid black;
+    margin: 250px auto 0 auto;
+    max-width: 500px;
+    background-color: ghostwhite;
+}
+
+#display {
+    border-bottom: 5px solid;
+    text-align: right;
+    height: 40px;
+    line-height: 65px;
+    font-size: 30px;
+    padding: 15px 5px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 5px solid wheat;
+    border-left: 5px solid wheat;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-right: 5px solid wheat;
+    border-top: 5px solid wheat;
+}
+
+.button {
+    text-align: center;
+    border: 8px solid firebrick;
+    font-size: 50px;
+    line-height: 75px;
+    cursor: grab;
+}
+
+#clear {
+    background-color: red;
+}
+
+#equal {
+    background-color: blue;
+    color: white;
+}
+
+.button[data-operator] {
+    background-color: darkorange;
+    color: white;
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
